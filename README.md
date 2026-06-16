@@ -79,4 +79,4 @@ STU003,Sophia Patel,Biology,2.91,Missing Report
 Arun Samy V
 
 GitHub: https://github.com/arunsamy4444
-Portfolio: https://arunsamy.vercel.app
+Portfolio: https://arunsamyportfolio.vercel.app/
