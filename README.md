@@ -117,6 +117,28 @@ STU001,Emma Wilson,Agriculture,3.82,Fully Funded
 STU002,Liam Chen,Forestry,3.45,Pending
 STU003,Sophia Patel,Biology,2.91,Missing Report
 ```
+### 🖥️ System Architecture & Data Flow
+
+```mermaid
+graph TD
+    A[ Messy Lab Data: CSV / Excel ] -->|File Uploader / Parser| B(Streamlit Data Validation Engine)
+    A2[ Live Mock Data Generator ] -->|Session State Init| B
+    
+    B --> C{Core Analytics Pipeline}
+    
+    C -->|Dynamic Calculations| D[🎯 Risk Scoring Engine]
+    C -->|Date Comparison| E[📅 Funding Expiry Tracker]
+    C -->|Boolean Mapping| F[📋 Research Milestone Progress]
+    
+    D --> G[🚨 Operational Alerts Panel]
+    E --> G
+    F --> G
+    
+    G --> H[📊 Plotly UI / Interactive Dashboard]
+    H -->|Local State Filter/Search| I[👨‍🎓 Customized Student Profiles]
+    
+    I -->|Pandas Data Mutation| J[📄 Report Export Engine: CSV/TXT]
+
 
 ## Potential Use Cases
 
